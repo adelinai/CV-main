@@ -7,7 +7,7 @@
           content="IE=edge">
     <meta name="viewport"
           content="width=device-width, initial-scale=1.0">
-    <title>Feder Catalin Andrei Resume</title>
+    <title>Adelina Feder Resume</title>
     <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
     <link rel="icon"
           href="./favicon.ico?v=2" />
@@ -21,6 +21,34 @@
           href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700">
     <link rel="stylesheet"
           href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+    <style>
+        :root {
+            --primary-accent: #00d2ff; /* Vibrant Cyan */
+            --secondary-accent: #3a4750;
+            --bg-deep: #0e0e0e;
+            --card-bg: #1a1a1a;
+            --text-main: #e0e0e0;
+            --text-muted: #a0a0a0;
+            --status-gold: #ffc107;
+        }
+        body { font-family: 'Poppins', sans-serif; color: var(--text-main); background-color: var(--bg-deep); }
+        .resumee-container { background-color: var(--bg-deep); border: 1px solid #333; }
+        .resumme-header { background: linear-gradient(135deg, #16213e 0%, #0f172a 100%); color: white; padding: 40px 20px; border-bottom: 4px solid var(--primary-accent); position: relative; }
+        .headline { position: absolute; top: 120px; right: 40px; margin-left: 0 !important; text-align: right; width: auto !important; max-width: 500px; }
+        .headline h1 { color: var(--primary-accent); letter-spacing: 2px; font-size: 2.2rem; margin-bottom: 5px; }
+        .headline h4 { color: var(--text-muted); font-weight: 300; font-size: 1.1rem; line-height: 1.4; margin-top: 0; }
+        .first-column { background-color: rgba(255,255,255,0.02); border-right: 1px solid #222; }
+        .header-5 { color: var(--primary-accent); font-weight: 700; text-transform: uppercase; letter-spacing: 1px; }
+        .header-6 { color: var(--text-muted); font-weight: 600; }
+        hr { border-top: 2px solid var(--primary-accent); width: 40px; margin-left: 0; opacity: 0.5; }
+        .role { color: var(--primary-accent); font-weight: 600; }
+        .company-wrapper { background: var(--card-bg) !important; border: 1px solid #333; transition: 0.3s; }
+        .company-wrapper:hover { border-color: var(--primary-accent); }
+        .years-of-experience { background: var(--primary-accent); color: #000; font-weight: bold; padding: 2px 8px; border-radius: 4px; }
+        .footer { background: transparent; padding: 30px; border-top: 1px solid #222; }
+        .footer img { filter: brightness(0) invert(1); opacity: 0.5; transition: 0.3s; margin: 0 25px; max-height: 40px; }
+        .footer img:hover { filter: grayscale(0%); opacity: 1; }
+    </style>
 </head>
 
 <body>
@@ -30,8 +58,8 @@
             <div class="resumee-container">
                 <div class="resumme-header">
                     <div class="headline">
-                        <h1>CATALIN FEDER</h1>
-                        <h4>SOFTWARE ENGINEER</h4>
+                        <h1>ADELINA FEDER</h1>
+                        <h4>SENIOR DELIVERY MANAGER | PORTFOLIO & DELIVERY LEADERSHIP</h4>
                     </div>
                 </div>
                 <div class="resumme-body row">
@@ -154,250 +182,155 @@
             data: {
                 workExperienceData: [
                     {
-                        "Company": "Qiagen",
-                        "Period": "09/2020 – 12/2022",
+                        "Company": "GlobalLogic Romania",
+                        "Period": "10/2024 – Present",
                         "Role": [
-                            "Associate Staff Software Engineer  - Full Stack"
+                            "Senior Delivery Manager"
                         ],
-                        "Technology Stack": ".Net 8, Angular 17, Bootstrap, MySQL, PostgreSQL, Elastic Search",
+                        "Technology Stack": "JIRA, Confluence, Azure DevOps, Generative AI",
                         "Projects": [
                             {
-                                "Name": "Omic Explorer",
-                                "Context": "Write from scratch a customer facing application that will help biologists search the company curated big data.",
-                                "Technology stack": ".Net 8, Angular 17, Bootstrap, PostgreSQL, Elastic Search",
+                                "Name": "Portfolio Governance & Delivery",
+                                "Context": "Lead delivery governance and portfolio oversight across multiple accounts, guiding 50+ Project Managers.",
+                                "Technology stack": "KPI Tracking, Reporting Frameworks",
                                 "Tasks/Experience": [
-                                    "Full stack development",
-                                    "Create and maintain the software architecture",
-                                    "Mentoring and coaching the team",
-                                    "TBA"
+                                    "Manage financial performance (P&L), including revenue tracking, cost control, and margin optimization",
+                                    "Partner with Sales and clients to define delivery strategies and SOWs",
+                                    "Drive operational efficiency through improved governance and AI-supported reporting"
                                 ],
                                 "Achievements": [
-                                    "TBA"
-                                ]
-                            }
-                        ]
-                    },
-                    {
-                        "Company": "Endava",
-                        "Period": "01/2023-03/2024",
-                        "Role": ["Technical Lead",
-                            "Senior Development Consultant"
-                        ],
-                        "Technology Stack": ".Net 7, SQL Server, Entity Framework Core, RabbitMQ, Docker, Distributes Systems",
-                        "Projects": [
-                            {
-                                "Name": "Next Gen ControlWorks",
-                                "Context": "Help rewrite a next-generation control room and contact centre solution from a monolithic architecture to a well defined and scalable service architecture. My responsibilities are working close with the architects, business owners to help the team deliver the best product. \r\n One of the most rewarding aspects of my position is mentoring and guiding team members to unlock their full potential. I provide comprehensive support, sharing best practices, industry insights, and technical expertise. By fostering a collaborative and empowering environment, I inspire team members to excel in their roles and contribute innovative ideas to our projects.",
-                                "Technology stack": ".Net 7, SQL Server, Entity Framework Core, RabbitMQ, Docker, Distributes Systems",
-                                "Tasks/Experience": [
-                                    ".NET backend development",
-                                    "Estimate tasks, making sure there are no blockers",
-                                    "Help devops with the deployment process",
-                                    "Leading a backend team, helping developers from other teams",
-                                    "Create and maintain the software solution, making sure best practices and guidelines are followed",
-                                    "Mentoring and coaching the team"
-                                ],
-                                "Achievements": [
-                                    "Worked with a small team on the proof of concept and managed to convince the client we can provide a new scalable solution",
-                                    "Together with the client's team we delivered on time everything that was expected from the EDP phase of the project. Stakeholders were very happy by the result",
-                                    "Because we succeeded in the EDP phase we managed to start the next phase of the project, MVP"
-                                ]
-                            }
-                        ]
-                    },
-                    {
-                        "Company": "Qiagen",
-                        "Period": "09/2020 – 12/2022",
-                        "Role": [
-                            "Senior Software Engineer - Full Stack",
-                            "Bioinformatics Engineering Manager"
-                        ],
-                        "Technology Stack": ".Net Core 5/6, Angular 13/14, Bootstrap, MySQL, PostgreSQL, AWS",
-                        "Projects": [
-                            {
-                                "Name": "Array Curator – internal curation tool",
-                                "Context": "Rewrite a desktop application as a web application. Work with multiple stakeholders in rethinking and improving existing workflows but also create a lot of new features. Team of 4(3 developers, one tester) working with Agile Methodology based on Scrum.",
-                                "Technology stack": ".Net Core 5, Angular 13, Bootstrap, MySQL, AWS",
-                                "Tasks/Experience": [
-                                    "Full stack development",
-                                    "Product owner: Create specifications with the stakeholders and refine them with the team",
-                                    "Create and maintain the software architecture",
-                                    "Mentoring and coaching the team"
-                                ],
-                                "Achievements": [
-                                    "Manage to release the application that contained all the existing features and a lot of extra functionality in a year and a half with a team of 3 developers (me included) and a tester",
-                                    "There were no blocking defects on the beta testing period",
-                                    "Promoted to Bioinformatics Engineering Manager during the project",
-                                    "Managed to receive bonuses for the whole team because of the success of the project"
-                                ]
-                            },
-                            {
-                                "Name": "CERT (Content Evaluation and Review Tool)",
-                                "Context": "Design and implement the MVP based on the stakeholder’s needs. Team of 4(3 developers, one tester) working with Agile Methodology based on Scrum.",
-                                "Technology stack": ".Net 6, Angular 14, Bootstrap, PostgreSQL deployed on premise.",
-                                "Tasks/Experience": [
-                                    "Full stack development",
-                                    "Product owner: Create specifications with the stakeholders and refine them with the team",
-                                    "Create and maintain the software architecture",
-                                    "Mentoring and coaching the team"
-                                ],
-                                "Achievements": [
-                                    "Manage to deliver the MVP ahead of the deadline",
-                                    "Keep the team motivated and happy",
-                                    "Won a hackathon contest in the company with 2 colleagues from other teams. The project has a great potential to increase the company revenue by bringing more clients. The project was given to another team to develop, and I continued to help them in the development process",
-                                ]
-                            }
-                        ]
-                    },
-                    {
-                        "Company": "Globant",
-                        "Period": "05/2017 – 08/2020",
-                        "Role": [
-                            "Senior Software Engineer - Full Stack"
-                        ],
-                        "Technology Stack": ".Net Core 3, Angular 2+, ASP.NET MVC, Windows Services, jQuery, ASP.NET CORE WEB API, REST API, HTML, CSS, SCSS",
-                        "Projects": [
-                            {
-                                "Name": "Fleet Portal",
-                                "Context": "Create an application for managing a fleets of trucks all over US for an important player in the fuel delivery industry",
-                                "Technology stack": "ASP.NET MVC, Windows Services, jQuery, SQL, HTML, CSS",
-                                "Tasks/Experience": [
-                                    "Full stack development",
-                                    "Create and maintain the software architecture",
-                                    "Work directly with the stakeholders to create tasks that meet their needs"
-                                ],
-                                "Achievements": [
-                                    "Successfully worked and delivered on two projects.",
-                                    "Fully responsible for this project since I was the only developer on it.",
-                                    "Managed to convince the client to rewrite an ASP .NET monolith to a .NET Core + Angular 2+ solution by making a working proof of concept. "
-                                ]
-                            },
-                            {
-                                "Name": "Management Portal",
-                                "Context": "Create a business rich application from scratch for the company back-office.",
-                                "Technology stack": ".Net Core 3, REST API, Angular 2+, SQL, HTML, CSS",
-                                "Tasks/Experience": [
-                                    "Full stack development",
-                                    "Create and maintain the software architecture",
-                                    "Work directly with the stakeholders to create tasks that meet their needs"
-                                ],
-                                "Achievements": [
-                                    "Successfully worked and delivered on two projects.",
-                                    "Learned Angular 2+ and managed to create a fast and reliable application.",
-                                    "Created an application that is monitoring all the deployment servers and can start services and stop them. We managed to sell the idea to the client, and this brought new people on the project."
+                                    "Standardized delivery practices and reduced manual effort through automation"
                                 ]
                             }
                         ]
                     },
                     {
                         "Company": "Fortech",
-                        "Period": "06/2015 – 05/2017",
-                        "Role": [
-                            "Software Engineer - Full Stack"
-                        ],
-                        "Technology Stack": ".ASP .NET Web API, ASP.NET MVC, Windows Services, Windows Forms, jQuery, Knockout, HTML, CSS, SCSS.",
+                        "Period": "04/2022 – 10/2023",
+                        "Role": ["Delivery Manager"],
+                        "Technology Stack": "P&L Management, Financial Forecasting, Pre-Sales",
                         "Projects": [
                             {
-                                "Name": "Multiple projects",
-                                "Context": "I came to Fortech working on a big initiative to rewrite a retail solution that was used by the leading grocery retailers in the US. It was a big project counting approximately 200 people. We used Agile Methodology based on Scrum.",
-                                "Technology stack": ".ASP .NET Web API, ASP.NET MVC, Windows Services, Windows Forms, jQuery, Knockout, HTML, CSS, SCSS",
+                                "Name": "Strategic Account Portfolio",
+                                "Context": "Managed a €1.2M+ annual delivery portfolio across 10 concurrent projects and clients.",
+                                "Technology stack": "Resource Planning, KPI Dashboards",
                                 "Tasks/Experience": [
-                                    "Full stack development, also introduction to bash scripting",
-                                    "Brainstorm ideas, codding, respect code guidelines, unit tests",
-                                    "Work directly with the stakeholders to create tasks that meet their needs"
+                                    "Oversaw delivery for a strategic account with 60+ FTE and 5 Project Managers",
+                                    "Negotiated role upgrades and rate adjustments with clients",
+                                    "Supported pre-sales activities, reviewing SOWs and shaping delivery approaches"
                                 ],
                                 "Achievements": [
-                                    "Manage start from scratch and deliver an important service that is integrated with physical hardware. This project was started by 2 other teams with no success.",
-                                    "After the rewrite, where I was doing backend and frontend tasks, I was placed in a team that was in charge only of a big backend service. We would finish the sprint early and I would get to help other teams with frontend tasks",
-                                    "I was able to create a bash script that was doing an important job regarding the application data. This was my first time working with bash scripting and I had very little support",
-                                    "I also maintained a legacy desktop application (Windows Forms) since I was the only one with experience on this technology"
+                                    "Maintained margins close to target through proactive cost optimization and data-driven staffing"
                                 ]
                             }
                         ]
                     },
                     {
-                        "Company": "Accenture (Evoline)",
-                        "Period": "10/2012 – 06/2015",
+                        "Company": "Fortech",
+                        "Period": "08/2021 – 10/2023",
                         "Role": [
-                            "Software Developer - Full Stack"
+                            "Product Owner (SAFe Environment)"
                         ],
-                        "Technology Stack": "Windows Forms, WPF, .ASP .NET Web Forms, ASP.NET MVC, Sitecore, BDD-Speckflow, Windows Services, Windows Workflow Foundation, jQuery, HTML, CSS",
+                        "Technology Stack": "SAFe, Jira, Roadmap Management",
                         "Projects": [
                             {
-                                "Name": "Multiple projects",
-                                "Context": "I started working on betting industry applications Later on the whole team moved to banking solutions. We used Agile Methodology based on Scrum. ",
-                                "Technology stack": "Windows Forms, WPF, .ASP .NET Web Forms, ASP.NET MVC, Sitecore, Windows Services, Windows Workflow Foundation, jQuery, HTML, CSS.",
+                                "Name": "US Healthcare Product",
+                                "Context": "Managed product backlog and roadmap delivery in a complex regulatory environment.",
+                                "Technology stack": "PI Planning, Stakeholder Management",
                                 "Tasks/Experience": [
-                                    "Full stack development desktop and web",
-                                    "Brainstorm ideas, codding, respect code guidelines, unit tests with high code coverage",
-                                    "Work directly with the stakeholders to create tasks that meet their needs"
+                                    "Facilitated PI Planning and translated business requirements into clear user stories",
+                                    "Ensured delivery of high-value features aligned with regulatory requirements"
                                 ],
                                 "Achievements": [
-                                    "Was the first candidate to be selected to work on this project at the end of a learning and testing initiative of the client. There were 15 candidates and the initiative took 5 weeks",
-                                    "Because this was the first time I was working in a bigger and more experienced team I tried to learn as much as I could from every team member. I became productive really quick on the project and my colleagues were appreciating my involvement and contributions to the project",
-                                    "I managed to switch fairly easily from one business area to another (Betting to Fintech) when we were moved to another project. Also, the technology stack was very diverse"
+                                    "Improved delivery predictability and decision-making speed"
                                 ]
                             }
                         ]
                     },
                     {
-                        "Company": "Recus Spa",
-                        "Period": "08/2011 – 10/2012",
+                        "Company": "Fortech",
+                        "Period": "01/2019 – 10/2023",
                         "Role": [
-                            "Junior Software Developer - full stack"
+                            "Project Manager / Scrum Master"
                         ],
-                        "Technology Stack": "Windows Forms, Windows Services, ASP .NET MVC, Sencha Ext JS, JQuery, HTML, CSS",
+                        "Technology Stack": "Agile, Scrum, Risk Management",
                         "Projects": [
                             {
-                                "Name": "Multiple projects",
-                                "Context": "Development Context: I was working on applications and services in the Fintech and credit collection industry. We used Agile Methodology based on Scrum.",
-                                "Technology stack": "Windows Forms, Windows Services, ASP .NET MVC, Sencha Ext JS, JQuery, HTML, CSS",
+                                "Name": "Agile Team Scaling",
+                                "Context": "Led Agile delivery for multiple projects and scaled engineering teams.",
+                                "Technology stack": "Kanban, WoW, Stakeholder Visibility",
                                 "Tasks/Experience": [
-                                    "Full stack development desktop and web",
-                                    "Brainstorm ideas, codding, respect code guidelines, unit tests with high code coverage",
-                                    "Work directly with the stakeholders to create tasks that meet their needs"
+                                    "Scaled engineering teams from 6 to 21 members",
+                                    "Established clear Ways of Working (WoW) and structured risk mitigation",
+                                    "Designed and maintained project status reports with relevant KPIs"
                                 ],
                                 "Achievements": [
-                                    "This was my first job and as a junior I was given a lot of responsibility like: production database read/write rights, deploy the applications, talk to the stakeholders that were italians",
-                                    "My first task was to create a service that was processing banking statements documents that were done manually by 10 people. I did this in 2 weeks and those 10 people were free to do more important work. This is when I first saw the power of automation and coding in a real time scenario",
-                                    "I also had to learn Italian in 6 months because the stakeholders were not speaking english. I managed to learn and talk directly to the stakeholders and create specifications based on their needs"
+                                    "Reduced release cycles from months to days, improving time-to-market"
                                 ]
                             }
                         ]
                     },
                     {
-                        "Company": "Freelancer",
-                        "Period": "01/2010-08/2011",
+                        "Company": "Fortech",
+                        "Period": "01/2016 – 01/2019",
                         "Role": [
-                            "Frontend Junior developer"
+                            "Senior Software Developer / Technical Team Lead"
                         ],
-                        "Technology Stack": ".ASP .NET Web Forms, ActionScript(Flash)",
+                        "Technology Stack": ".NET, Microservices, Scrum of Scrums",
                         "Projects": [
                             {
-                                "Name": "Multiple projects",
-                                "Context": "Doing freelancing jobs for clients. Mostly presentation websites but also Flash catalogues,animated banners and small games.",
-                                "Technology stack": ".ASP .NET Web Forms, ActionScript(Flash)",
+                                "Name": "Monolith Transformation",
+                                "Context": "Led an Agile team within a large-scale (200+ engineers) modernization program.",
+                                "Technology stack": ".NET, Architecture Alignment",
+                                "Tasks/Experience": [
+                                    "Contributed to monolith-to-microservices transformation",
+                                    "Coordinated cross-team dependencies and mentored developers"
+                                ],
+                                "Achievements": [
+                                    "Successfully improved system scalability and maintainability"
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "Company": "Fortech",
+                        "Period": "10/2012 – 01/2016",
+                        "Role": [
+                            "Software Engineer"
+                        ],
+                        "Technology Stack": ".NET, Web API, JavaScript",
+                        "Projects": [
+                            {
+                                "Name": "Full-Stack Applications",
+                                "Context": "Developed scalable solutions aligned with business requirements.",
+                                "Technology stack": ".NET, Modern JS Frameworks",
+                                "Tasks/Experience": [
+                                    "Delivered maintainable solutions and collaborated with stakeholders"
+                                ],
+                                "Achievements": [
+                                    "Ensured alignment between technical delivery and client scope"
+                                ]
                             }
                         ]
                     }
                 ],
-                yearsOfExperience: new Date().getFullYear() - 2011,// 2011 should be replaced with the year you started working
-                personalProfile: "I am a passionate software engineer with great attention to details. I am a team player most of my experience is as a full stack developer on complex projects.",
+                yearsOfExperience: new Date().getFullYear() - 2012,
+                personalProfile: "Senior Delivery Manager with 13+ years of experience leading complex software delivery across multi-client environments. Proven track record of managing €1.2M+ annual portfolios, optimizing delivery margins, and scaling high-performing teams.",
                 areaOfExpertise: [
-                    "Full-stack developer",
-                    "AWS, ASP .NET Core API, REST",
-                    "Angular 2+, TypeScript",
-                    "ASP. NET MVC, Windows Services",
-                    "HTML , CSS, SCSS, JQuery, Bootstrap 4+",
-                    "SQL Server, My Sql, PostgreSQL",
-                    "Agile, SCRUM",
+                    "Delivery & Program Management",
+                    "P&L Ownership & Financial Forecasting",
+                    "Agile & SAFe Methodologies",
+                    "Stakeholder & Risk Management",
+                    "Pre-Sales & SOW Definition",
+                    "Resource & Capacity Planning",
+                    "KPI Tracking & Reporting"
                 ],
                 otherSkills: [
-                    "The ability to analyze complex technical information",
-                    "Developing and maintaining complex solutions",
-                    "Detail oriented",
-                    "Excellent problem solver",
-                    "Good coaching and mentoring skills"
+                    "Team Leadership & Coaching",
+                    "Process Improvement & Governance",
+                    "AI/Automation for Reporting",
+                    "Strategic Delivery Optimization",
+                    "Cross-team Alignment"
                 ]
             },
             methods: {

@@ -73,7 +73,6 @@ body {
 .resumee-photo {
     border-radius: 150px;
     height: 300px;
-    background-color: var(--primary-color);
     background-size: cover;
     min-width: 235px;
     background-repeat: no-repeat;
@@ -85,8 +84,6 @@ body {
 .resumee-image {
     height: 85%;
     border-radius: 150px;
-    -webkit-filter: grayscale(100%);
-    filter: grayscale(100%);
 }
 
 .resumme-body {
