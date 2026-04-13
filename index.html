@@ -7,7 +7,28 @@
           content="IE=edge">
     <meta name="viewport"
           content="width=device-width, initial-scale=1.0">
-    <title>Adelina Feder Resume</title>
+    <title>Adelina Feder | Senior Delivery Manager | Portfolio & Delivery Leadership</title>
+    <meta name="description" content="Senior Delivery Manager with 13+ years of experience in software delivery, P&L ownership, and scaling high-performing teams.">
+    <meta property="og:title" content="Adelina Feder Resume">
+    <meta property="og:description" content="Senior Delivery Manager | P&L Ownership | Portfolio & Delivery Leadership">
+    <meta property="og:type" content="website">
+    
+    <!-- Structured Data for SEO -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Adelina Feder",
+      "jobTitle": "Senior Delivery Manager",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Cluj-Napoca",
+        "addressCountry": "Romania"
+      },
+      "url": "https://linkedin.com/in/adelina-feder-0a145235"
+    }
+    </script>
+
     <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
     <link rel="icon"
           href="./favicon.ico?v=2" />
@@ -32,11 +53,11 @@
             --status-gold: #ffc107;
         }
         body { font-family: 'Poppins', sans-serif; color: var(--text-main); background-color: var(--bg-deep); }
-        .resumee-container { background-color: var(--bg-deep); border: 1px solid #333; }
-        .resumme-header { background: linear-gradient(135deg, #16213e 0%, #0f172a 100%); color: white; padding: 40px 20px; border-bottom: 4px solid var(--primary-accent); position: relative; }
-        .headline { position: absolute; top: 120px; right: 40px; margin-left: 0 !important; text-align: right; width: auto !important; max-width: 500px; }
-        .headline h1 { color: var(--primary-accent); letter-spacing: 2px; font-size: 2.2rem; margin-bottom: 5px; }
-        .headline h4 { color: var(--text-muted); font-weight: 300; font-size: 1.1rem; line-height: 1.4; margin-top: 0; }
+        .resumee-container { background-color: var(--bg-deep); border: 1px solid #333; overflow: hidden; width: 100%; }
+        .resumme-header { background: linear-gradient(135deg, #16213e 0%, #0f172a 100%); color: white; padding: 40px 20px; border-bottom: 4px solid var(--primary-accent); display: flex; justify-content: center; align-items: center; min-height: 200px; }
+        .headline { text-align: center; max-width: 100%; z-index: 2; }
+        .headline h1 { color: var(--primary-accent); letter-spacing: 1px; font-size: 1.8rem; margin-bottom: 10px; font-weight: 700; }
+        .headline h4 { color: var(--text-muted); font-weight: 300; font-size: 1rem; line-height: 1.3; margin-top: 0; }
         .first-column { background-color: rgba(255,255,255,0.02); border-right: 1px solid #222; }
         .header-5 { color: var(--primary-accent); font-weight: 700; text-transform: uppercase; letter-spacing: 1px; }
         .header-6 { color: var(--text-muted); font-weight: 600; }
@@ -47,27 +68,43 @@
         .years-of-experience { background: var(--primary-accent); color: #000; font-weight: bold; padding: 2px 8px; border-radius: 4px; }
         .footer { background: transparent; padding: 30px; border-top: 1px solid #222; }
         .footer img { filter: brightness(0) invert(1); opacity: 0.5; transition: 0.3s; margin: 0 25px; max-height: 40px; }
-        .footer img:hover { filter: grayscale(0%); opacity: 1; }
+
+        @media (min-width: 992px) {
+            .resumme-header { justify-content: flex-end; align-items: flex-end; min-height: 250px; padding: 40px; }
+            .headline { text-align: right; max-width: 600px; }
+            .headline h1 { font-size: 2.5rem; letter-spacing: 2px; }
+            .headline h4 { font-size: 1.1rem; }
+        }
+        
+        /* Print optimization */
+        @media print {
+            body { background: white !important; color: black !important; }
+            .resumee-container { border: none !important; box-shadow: none !important; background: white !important; }
+            .resumme-header { background: #f0f0f0 !important; color: black !important; border-bottom: 2px solid #333 !important; }
+            .headline h1, .header-5, .role { color: #0056b3 !important; }
+            .company-wrapper { background: white !important; border: 1px solid #ddd !important; break-inside: avoid; }
+            .projects-wrapper { max-height: none !important; opacity: 1 !important; }
+            .toggle, .bi-chevron-compact-down { display: none !important; }
+            .first-column { border-right: 1px solid #eee !important; background: transparent !important; }
+        }
     </style>
 </head>
 
 <body>
-    <div id="app"
-         class="text-center w-100">
+    <div id="app" class="text-center w-100">
         <template>
-            <div class="resumee-container">
-                <div class="resumme-header">
-                    <div class="headline">
+            <main class="resumee-container">
+                <header class="resumme-header">
+                    <div class="headline" aria-label="Name and Title">
                         <h1>ADELINA FEDER</h1>
                         <h4>SENIOR DELIVERY MANAGER | PORTFOLIO & DELIVERY LEADERSHIP</h4>
                     </div>
-                </div>
-                <div class="resumme-body row">
-                    <div class="col-sm-12 col-lg-4 first-column">
+                </header>
+                <div class="resumme-body row no-gutters">
+                    <aside class="col-sm-12 col-lg-4 first-column">
                         <div class="photo-wrapper w-100">
                             <div class="resumee-photo">
-                                <img class="resumee-image"
-                                     src="resumee-photo.jpg">
+                                <img class="resumee-image" src="resumee-photo.jpg" alt="Adelina Feder Professional Portrait">
                             </div>
                         </div>
                         <hr>
@@ -89,20 +126,17 @@
                                 {{oskills}}
                             </li>
                         </ul>
-
-                    </div>
-                    <div class="col-sm-12 col-lg-8 second-column">
+                    </aside>
+                    
+                    <section class="col-sm-12 col-lg-8 second-column">
                         <hr>
                         <span @click="toggleAll()"
                               class="header-5 cursor-pointer">Work experience <span class="years-of-experience">over
                                 {{yearsOfExperience}}
                                 years</span></span>
 
-
                         <div class="work-experience">
-                            <div class="company-wrapper"
-                                 @click="toggle($event,item)"
-                                 v-for="item in workExperienceData">
+                            <article class="company-wrapper" @click="toggle($event,item)" v-for="item in workExperienceData">
                                 <div>
                                     <div class="role"
                                          v-for="role in item['Role']">
@@ -142,11 +176,12 @@
                                         </ul>
                                     </div>
                                 </div>
-                            </div>
+                            </article>
                         </div>
 
                         <hr>
-                        <div class="header-5">Education and Training</div>
+                        <section aria-label="Education">
+                            <div class="header-5">Education and Training</div>
                         <div class="header-6">Certifications:</div>
                         <div class="company-year">PMI Agile Certified Practitioner (PMI-ACP)®</div>
                         <div class="company-year">Certified SAFe® 6 Product Owner / Product Manager</div>
@@ -154,11 +189,12 @@
                         <br>
                         <div class="header-6">TECHNICAL UNIVERSITY OF CLUJ-NAPOCA, ROMANIA</div>
                         <div class="company-year">Engineering Degree in Telecommunications</div>
-                    </div>
+                        </section>
+                    </section>
                 </div>
-                <div class="footer">
-                </div>
-            </div>
+                <footer class="footer">
+                </footer>
+            </main>
         </template>
     </div>
 

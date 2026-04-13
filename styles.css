@@ -34,25 +34,16 @@ body {
     margin-top: 30px;
     margin-bottom: 30px;
     max-width: 850px;
-    -webkit-box-shadow: 0px 8px 14px 8px rgb(0 0 0 / 10%);
     box-shadow: 0px 8px 14px 8px rgb(0 0 0 / 10%);
-    display: inline-table;
+    display: inline-block;
     background: #0e0e0e;
     border-bottom-right-radius: 50px;
     border-top-left-radius: 50px;
     background-image: url(noise.svg);
 }
 
-.headline {
-    top: 150px;
-    margin-left: 530px;
-    position: absolute;
-    font-weight: bold;
-    color: var(--secondary-color);
-}
-
 .first-column {
-    top: -180px;
+    top: 0;
 }
 
 .resumme-header {
@@ -87,7 +78,7 @@ body {
 }
 
 .resumme-body {
-    padding: 10px 50px;
+    padding: 10px 20px;
     padding-bottom: 50px;
     border-radius: 0 0 5px 5px;
 }
@@ -242,11 +233,21 @@ ul {
     width: 60px;
 }
 
-@media (max-width: 479px) {
+@media (min-width: 992px) {
+    .first-column {
+        top: -180px;
+    }
+    .resumme-body {
+        padding: 10px 50px;
+    }
+}
+
+@media (max-width: 991px) {
     .resumee-container {
         margin-top: 20px;
         margin-bottom: 20px;
-        margin-left: 15px;
+        margin-left: 0;
+        border-radius: 0;
     }
 
     .resumee-photo {
@@ -255,23 +256,6 @@ ul {
 
     .resumme-body {
         padding: 10px 10px;
-    }
-
-    .headline {
-        top: 45px;
-        margin-left: 13px;
-    }
-
-    .second-column {
-        top: -200px;
-    }
-
-    .headline h1 {
-        font-size: 2rem;
-    }
-
-    .headline h4 {
-        font-size: 1.5rem;
     }
 
     .photo-wrapper {
