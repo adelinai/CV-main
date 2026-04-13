@@ -146,31 +146,17 @@
                         </div>
 
                         <hr>
-                        <div class="header-5">Open source:</div>
-                        <div class="company-year">Developing and maintaining <a
-                               href="https://www.npmjs.com/package/spread-table">spread-table</a>, an Angular 2+ table
-                        </div>
-
-                        <hr>
                         <div class="header-5">Education and Training</div>
                         <div class="header-6">Certifications:</div>
-                        <div class="company-year">MTA: Web Development Fundamentals from Microsoft - 2014</div>
+                        <div class="company-year">PMI Agile Certified Practitioner (PMI-ACP)®</div>
+                        <div class="company-year">Certified SAFe® 6 Product Owner / Product Manager</div>
+                        <div class="company-year">Certified Scrum Master</div>
                         <br>
                         <div class="header-6">TECHNICAL UNIVERSITY OF CLUJ-NAPOCA, ROMANIA</div>
-                        <div class="company-year">Bachelor of Computer Science Engineering, 2011</div>
-                        <br>
-                        <div class="company-year">National College "Gheorghe Sincai", Baia Mare Romania - 2007</div>
-                        <br>
-                        <div class="company-year">Popular Art School "Liviu Borlan", Baia Mare Romania</div>
+                        <div class="company-year">Engineering Degree in Telecommunications</div>
                     </div>
                 </div>
                 <div class="footer">
-                    <img src="./assets/accenture.png">
-                    <img src="./assets/fortech.png">
-                    <img src="./assets/globant.png">
-                    <img src="./assets/endava.png">
-                    <img style="width: 40px;"
-                         src="./assets/Qiagen.png">
                 </div>
             </div>
         </template>
@@ -256,7 +242,7 @@
                         "Technology Stack": "Agile, Scrum, Risk Management",
                         "Projects": [
                             {
-                                "Name": "Agile Team Scaling",
+                                "Name": "Healthcare - Agile Team Scaling",
                                 "Context": "Led Agile delivery for multiple projects and scaled engineering teams.",
                                 "Technology stack": "Kanban, WoW, Stakeholder Visibility",
                                 "Tasks/Experience": [
@@ -279,7 +265,7 @@
                         "Technology Stack": ".NET, Microservices, Scrum of Scrums",
                         "Projects": [
                             {
-                                "Name": "Monolith Transformation",
+                                "Name": "eCommerce - Monolith Transformation",
                                 "Context": "Led an Agile team within a large-scale (200+ engineers) modernization program.",
                                 "Technology stack": ".NET, Architecture Alignment",
                                 "Tasks/Experience": [
@@ -301,7 +287,7 @@
                         "Technology Stack": ".NET, Web API, JavaScript",
                         "Projects": [
                             {
-                                "Name": "Full-Stack Applications",
+                                "Name": "eCommerce - Full-Stack Applications",
                                 "Context": "Developed scalable solutions aligned with business requirements.",
                                 "Technology stack": ".NET, Modern JS Frameworks",
                                 "Tasks/Experience": [
@@ -335,7 +321,7 @@
             },
             methods: {
                 toggle(event, item) {
-                    this.workExperienceData.find(i => i.Company === item.Company).expanded = !item.expanded;
+                    item.expanded = !item.expanded;
                     this.workExperienceData = [...this.workExperienceData];
                 },
                 toggleAll() {
