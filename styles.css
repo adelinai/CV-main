@@ -39,7 +39,8 @@ body {
     background: #0e0e0e;
     border-bottom-right-radius: 50px;
     border-top-left-radius: 50px;
-    background-image: url(noise.svg);
+    background-image: radial-gradient(circle, rgba(255,255,255,0.03) 1px, transparent 1px);
+    background-size: 20px 20px;
 }
 
 .first-column {
@@ -81,6 +82,18 @@ body {
     padding: 10px 20px;
     padding-bottom: 50px;
     border-radius: 0 0 5px 5px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.first-column {
+    display: flex;
+    flex-direction: column;
+}
+
+.second-column {
+    display: flex;
+    flex-direction: column;
 }
 
 .header-5 {
@@ -127,7 +140,8 @@ ul {
     border-radius: 10px;
     background: #242424;
     margin-bottom: 10px;
-    background-image: url(noise.svg);
+    background-image: radial-gradient(circle, rgba(255,255,255,0.05) 1px, transparent 1px);
+    background-size: 15px 15px;
 }
 
 .role {
@@ -263,3 +277,46 @@ ul {
         justify-content: center;
     }
 }
+    :root {
+        --primary-accent: #00d2ff; /* Vibrant Cyan */
+        --secondary-accent: #3a4750;
+        --bg-deep: #0e0e0e;
+        --card-bg: #1a1a1a;
+        --text-main: #e0e0e0;
+        --text-muted: #a0a0a0;
+        --status-gold: #ffc107;
+    }
+    body { font-family: 'Poppins', sans-serif; color: var(--text-main); background-color: var(--bg-deep); }
+    .resumee-container { background-color: var(--bg-deep); border: 1px solid #333; overflow: hidden; width: 100%; }
+    .resumme-header { background: linear-gradient(135deg, #16213e 0%, #0f172a 100%); color: white; padding: 40px 20px; border-bottom: 4px solid var(--primary-accent); display: flex; justify-content: center; align-items: center; min-height: 200px; }
+    .headline { text-align: center; max-width: 100%; z-index: 2; }
+    .headline h1 { color: var(--primary-accent); letter-spacing: 1px; font-size: 1.8rem; margin-bottom: 10px; font-weight: 700; }
+    .headline h4 { color: var(--text-muted); font-weight: 300; font-size: 1rem; line-height: 1.3; margin-top: 0; }
+    .header-5 { color: var(--primary-accent); font-weight: 700; text-transform: uppercase; letter-spacing: 1px; }
+    .header-6 { color: var(--text-muted); font-weight: 600; }
+    hr { border-top: 2px solid var(--primary-accent); width: 40px; margin-left: 0; opacity: 0.5; }
+    .role { color: var(--primary-accent); font-weight: 600; }
+    .company-wrapper { background: var(--card-bg) !important; border: 1px solid #333; transition: 0.3s; }
+    .company-wrapper:hover { border-color: var(--primary-accent); }
+    .years-of-experience { background: var(--primary-accent); color: #000; font-weight: bold; padding: 2px 8px; border-radius: 4px; }
+    .footer { background: transparent; padding: 30px; border-top: 1px solid #222; }
+    .footer img { filter: brightness(0) invert(1); opacity: 0.5; transition: 0.3s; margin: 0 25px; max-height: 40px; }
+
+    @media (min-width: 992px) {
+        .resumme-header { justify-content: flex-end; align-items: flex-end; min-height: 250px; padding: 40px; }
+        .headline { text-align: right; max-width: 600px; }
+        .headline h1 { font-size: 2.5rem; letter-spacing: 2px; }
+        .headline h4 { font-size: 1.1rem; }
+    }
+
+    /* Print optimization */
+    @media print {
+        body { background: white !important; color: black !important; }
+        .resumee-container { border: none !important; box-shadow: none !important; background: white !important; }
+        .resumme-header { background: #f0f0f0 !important; color: black !important; border-bottom: 2px solid #333 !important; }
+        .headline h1, .header-5, .role { color: #0056b3 !important; }
+        .company-wrapper { background: white !important; border: 1px solid #ddd !important; break-inside: avoid; }
+        .projects-wrapper { max-height: none !important; opacity: 1 !important; }
+        .toggle, .bi-chevron-compact-down { display: none !important; }
+        .first-column { border-right: 1px solid #eee !important; background: transparent !important; }
+    }
